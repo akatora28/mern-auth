@@ -23,6 +23,10 @@ require('./config/database');
 // Import Routes
 app.use(require('./routes'));
 
+// Error Handling Middleware
+const handleErrors = require('./middleware/handleErrors');
+app.use(handleErrors)
+
 // Use port 3001 since I'm making the assumption this api will be part
 // of a MERN app and React will be running on 3000
 const port = process.env.PORT || 3001
