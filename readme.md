@@ -9,6 +9,7 @@ npm start
 ```
 
 ## Dependecies
+* [bcrypt](https://github.com/kelektiv/node.bcrypt.js#readme) - User password encryption
 * [cors](https://github.com/expressjs/cors) - Allow cross-origin api requests
 * [express](https://github.com/expressjs/express) - Handle HTTP requests
 * [mongoose](https://github.com/Automattic/mongoose) - ORM for MongoDB
