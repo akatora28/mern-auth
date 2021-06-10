@@ -2,7 +2,8 @@
  * Error Handling Middleware
  * Thanks, Kevin: https://codeburst.io/better-error-handling-in-express-js-b118fc29e9c7
  */
-const { GeneralError } = require('../utils/errors');
+const path = require('path');
+const { GeneralError } = require(path.resolve('src','utils','errors'));
 
 const handleErrors = (err, req, res, next) => {
     if (err instanceof GeneralError) {
