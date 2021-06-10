@@ -7,3 +7,13 @@ Install & run with:
 npm install
 npm start
 ```
+
+## Dependecies
+* [cors](https://github.com/expressjs/cors) - Allow cross-origin api requests
+* [express](https://github.com/expressjs/express) - Handle HTTP requests
+* [mongoose](https://github.com/Automattic/mongoose) - ORM for MongoDB
+
+## Dev Dependencies
+* [nodemon]()
+* [dotenv]()
+* [run-script-os]() - Still a WIP making this run cross-platform
