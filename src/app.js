@@ -16,6 +16,9 @@ app.use(cors({credentials: true}));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
+// MongoDB configuration
+require('./config/database');
+
 app.get('/', (req, res) => res.send('Hello world!'))
 
 // Use port 3001 since I'm making the assumption this api will be part
