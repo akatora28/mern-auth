@@ -1,0 +1,22 @@
+{
+  "name": "mern-auth",
+  "version": "1.0.0",
+  "description": "Simple Auth for MERN Stack Apps",
+  "main": "app.js",
+  "scripts": {
+    "start": "run-script-os",
+    "start:darwin:nix": "nodemon ./src/app.js",
+    "start:windows": "nodemon .\\src\\app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Katora",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "run-script-os": "^1.1.6"
+  }
+}
