@@ -17,9 +17,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 // MongoDB configuration
+// TODO: make path OS independent
 require('./config/database');
 
-app.get('/', (req, res) => res.send('Hello world!'))
+// Import Routes
+app.use(require('./routes'));
 
 // Use port 3001 since I'm making the assumption this api will be part
 // of a MERN app and React will be running on 3000
