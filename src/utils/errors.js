@@ -12,15 +12,21 @@ class GeneralError extends Error {
     getStatusCode() {
         if (this instanceof BadRequest) {
             return 400;
-        } else {
+        } 
+        if (this instanceof DuplicateUser) {
+            return 409;
+        }
+        else {
             return 500;
         }
     }
 }
 
 class BadRequest extends GeneralError { }
+class DuplicateUser extends GeneralError {}
 
 module.exports = {
     GeneralError,
-    BadRequest
+    BadRequest,
+    DuplicateUser
 }
