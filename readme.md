@@ -18,3 +18,5 @@ npm start
 * [nodemon]()
 * [dotenv]()
 * [run-script-os]() - Cross-platform scripts
+
+## API
