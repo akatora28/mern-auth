@@ -10,6 +10,10 @@ var UserSchema = new Schema({
     password: {
         type: String,
         select: false // Will prevent 'password' from being returned in default Mongoose Object
+    },
+    isEmailVerified: {
+        type: Boolean,
+        default: false,
     }
 },{timestamps: true}) // Add createdAt, updatedAt fields automatically
 

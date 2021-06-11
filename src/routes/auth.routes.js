@@ -8,5 +8,6 @@ router.post('/login', (req, res) => {
     res.send("/login")
 })
 router.post('/register', authController.register)
+router.post('/verify', authController.verify)
 
 module.exports = router;
