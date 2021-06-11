@@ -7,6 +7,15 @@ Install & run with:
 npm install
 npm start
 ```
+___  
+
+## External Services Used
+**Database**
+* MongoDB via [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) - Mongo because it's not really a **M**ERN stack app without it. MongoDB Atlas offers a nice free-tier for small hobby projects / development, so in my opinion it's a friendly option for devs just getting started with Mongo.  
+
+**SMTP**
+* [SMTP2GO](https://www.smtp2go.com/) - I'm using smtp2go since they also have a nice free-tier for small dev projects, only major downside is that they require private domain email (ie. gmail, yahoo, aol, etc won't work) to setup a new account.  
+___
 
 ## Dependecies
 * [bcryptjs]() - JS version of bcrypt for password hashing, using the pure JS version since the native bindings for bcrypt cause some installation errors on different machines
