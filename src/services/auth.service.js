@@ -12,8 +12,7 @@ exports.registerUser = async function registerUser(registerDTO) {
     // Check database to ensure user doesn't already exist
     const userAlreadyExists = await User.findOne({email: email})
     if(userAlreadyExists) {
-        console.log("Dupes")
-        throw new DuplicateUser("A user with that email already exists")
+        throw new DuplicateUser
     }
 
     // Bcrypt password before saving
