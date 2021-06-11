@@ -1,11 +1,12 @@
 // Auth.routes.js
-const path = require('path');
-const router = require('express').Router();
-const { BadRequest } = require(path.resolve('src','utils','errors'));
+const path = require('path')
+const router = require('express').Router()
+const authController = require(path.resolve('src','controllers','auth.controller'))
 
 router.post('/login', (req, res) => {
-    throw new BadRequest("Is this working?");
+    // TODO
     res.send("/login")
 })
+router.post('/register', authController.register)
 
 module.exports = router;
